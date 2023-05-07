@@ -1,9 +1,6 @@
 <template>
-  <div>
-    <div
-      v-if="modalActive"
-      class="p-4 bg-white self-start mt-32 max-w-screen-md"
-    >
+  <div v-if="modalActive">
+    <div class="p-4 bg-white self-start mt-32 max-w-screen-md">
       <slot />
       <button class="text-white mt-8 bg-weather-primary py-2 px-6">
         Close
